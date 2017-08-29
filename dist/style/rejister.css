@@ -1,0 +1,321 @@
+/*样式重置*/
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{font-size:12px; font-family:"微软雅黑";}
+input,a{outline:none;}
+
+body{
+	background: #efefef;
+}
+
+/*头部*/
+.zhuce_top{
+	margin:0 auto;
+	margin-top: 43px;
+	margin-bottom: 51px;
+	width: 1000px;
+	height: 35px;	
+	
+}
+
+.zhuce_top>div{
+	width:183px ;
+	height:35px ;
+	background: url(../images/sprite.png) -20px -26px no-repeat;
+	float: left;
+}
+.zhuce_top>p{
+	float: right;
+	line-height: 35px;
+	font-size: 16px;
+	color: #AAAAAA;
+}
+.zhuce_top>p>a{
+	font-size: 16px;
+	color: #ca5252;
+}
+
+
+/*主要内容区*/
+
+/*上方的两部分模块*/
+.zhuce_content{
+	width: 1000px;
+	height: 900px;
+	border-radius: 10px;
+	margin: 0 auto;
+	background: white;	
+}
+
+.putong{
+	width: 320px;
+	height: 64px;	
+	margin: 0 auto;
+	padding-top: 44px;	
+}
+.putong>div{
+	width: 320px;
+	height: 40px;
+	margin: 0 auto;	
+}
+
+.putong>div>div{
+	width: 159px;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	color:white ;
+	background:#CA5252 ;
+	border: 1px solid white;
+	border-right: 0;
+}
+
+.putong>div>p{
+	width: 159px;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	color: #AAAAAA;
+	border: 1px solid #AAAAAA;
+	border-left: 0;	
+}
+
+.zhuce_form{
+	width: 1000px;
+	height: 606px;	
+	padding-top:14px ;
+}
+
+/*  邮箱*/
+.zhuce_form_div1{
+	width: 1000px;
+	height: 47px;	
+	margin-bottom: 25px;
+	
+}
+
+.zhuce_form_div1>label{
+	display: block;
+	float: left;
+	width: 340px;
+	height:47px;
+	line-height: 47px;
+	text-align: right;
+	font-size: 14px;
+	
+}
+
+.zhuce_form_div1>input{
+	display: block;
+	float: left;
+	width: 322px;
+	height:43px;
+	line-height: 43px;
+	background: white;
+	font-size: 14px;
+	
+}
+
+/*  密码*/
+
+.zhuce_form_div2{
+	width: 1000px;
+	height: 47px;	
+	margin-bottom: 25px;
+	
+}
+
+.zhuce_form_div2>label{
+	display: block;
+	float: left;
+	width: 340px;
+	height:47px;
+	line-height: 47px;
+	text-align: right;
+	font-size: 14px;
+	
+}
+
+.zhuce_form_div2>input{
+	display: block;
+	float: left;
+	width: 322px;
+	height:43px;
+	line-height: 43px;
+	background: white;
+	font-size: 14px;
+	
+}
+
+
+/*确认密码*/
+.zhuce_form_div3{
+	width: 1000px;
+	height: 47px;	
+	margin-bottom: 25px;
+	
+}
+
+.zhuce_form_div3>label{
+	display: block;
+	float: left;
+	width: 340px;
+	height:47px;
+	line-height: 47px;
+	text-align: right;
+	font-size: 14px;
+	
+}
+
+.zhuce_form_div3>input{
+	display: block;
+	float: left;
+	width: 322px;
+	height:43px;
+	line-height: 43px;
+	background: white;
+	font-size: 14px;
+	
+}
+/*验证码框*/
+
+.zhuce_code{
+	width: 1000px;
+	height: 47px;	
+	margin-bottom: 25px;	
+}
+.zhuce_code>label{
+	display: block;
+	float: left;
+	width: 340px;
+	height:47px;
+	line-height: 47px;
+	text-align: right;
+	font-size: 14px;
+	
+}
+
+.zhuce_code>b{
+	display: block;
+	float: left;
+	width: 220px;
+	height:43px;
+	line-height: 43px;
+	background: white;
+	font-size: 30px;
+	text-align: center;
+	border: 1px solid #888888;
+}
+.zhuce_code>button{
+	display: block;
+	float: left;
+	line-height: 40px;
+	font-size: 24px;
+	text-align: center;
+	border: 1px solid #AAAAAA;
+	margin-left: 20px;
+	background: blue;
+	
+}
+/*验证码*/
+.zhuce_form_div4{
+	width: 1000px;
+	height: 47px;	
+	margin-bottom: 25px;
+	
+}
+
+.zhuce_form_div4>label{
+	display: block;
+	float: left;
+	width: 340px;
+	height:47px;
+	line-height: 47px;
+	text-align: right;
+	font-size: 14px;	
+}
+
+.zhuce_form_div4>input{
+	display: block;
+	float: left;
+	width: 322px;
+	height:43px;
+	line-height: 43px;
+	background: white;
+	font-size: 14px;
+	
+}
+
+/*   注册按钮*/
+.zhuce_btn{
+	width: 324px;
+	height: 46px;
+	margin: 0 auto;
+	background: red;
+	font-size: 18px;
+	color: white;
+	line-height: 46px;
+	text-align: center;	
+}
+
+
+/*服务   确认*/
+.sure_sever{
+	width: 325px;
+	margin:10px 0 0 340px ;
+	font-size: 14px;
+	color: #CCCCCC;	
+}
+
+.zhuce_content>form>a{
+	display: block;
+	width: 900px;
+	height: 102px;
+	background: url(../images/down.png);
+	margin: 0 auto;
+	margin-top: 70px;	
+}
+
+
+/*底部*/
+.zhuce_foot{
+	width: 1000px;
+	height: 82px;
+	margin: 0 auto;
+	padding-top: 24px;	
+}
+.zhuce_foot>span{
+	width: 176px;
+	margin-left:412px ;	
+	color: #AAAAAA;
+}
+.zhuce_foot>p{
+	margin-bottom: 13px;
+}
+.zhuce_foot_p_ul{
+	margin-left:214px ;
+}
+.zhuce_foot_p_ul>li{
+	float: left;
+	margin-left: 3px;	
+}
+.zhuce_foot_p_ul>li>a{
+	color: #AAAAAA;	
+}
+.zhuce_foot_p_ul>li>a:hover{
+	color: crimson;
+}
+
+
+
+
+
+
