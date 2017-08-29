@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>网易暴雪周边商城</title>
+		<link rel="stylesheet" href="style/common.css"/>
+		<link rel="stylesheet" href="style/main.css"/>
+	</head>
+	<script src="js/common.js"></script>
+	<script src="js/jquery-1.11.0.js"></script>
+	
+	
+	<script src="js/list.js"></script>
+	
+	<body>
+		<!--头部-->
+		<div class="header-wrap">
+			<div class="header">
+				<!--头部图-->
+				<a class="topLogo" target="_blank" href="http://localhost/wangyi/index.html"></a>
+				<!--头部右侧列表-->
+				<div class="headerNav">
+					<span class="hi">&nbsp;</span>
+					<span class="user_name">你好</span>
+					<span class="welcome">,欢迎来到网易暴雪周边商城</span>
+					&nbsp;&nbsp;|&nbsp;
+					<a href="#" class="out" style="display: none;">退出</a>
+					<a href="#" class="login"  >登录</a>
+					<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+					<a href="http://localhost/wangyi/register.html" class="register">注册</a>
+					<span>&nbsp;&nbsp;|&nbsp;</span>
+					<a href="#" class="help">帮助中心</a>
+					&nbsp;|
+					<!--我的商城-->
+					<div class="myshop_show">
+						<a class="myshop_title">我的商城</a>
+						<ul class="lie">
+							<li><a href="#">我的订单</a></li>								
+							<li><a href="#">我的优惠劵</a></li>
+							<li><a href="#">我的评价晒单</a></li>
+							<li><a href="#">我的收货地址</a></li>
+							<li><a href="#">我的疑难提问</a></li>
+							<li><a href="#">我的售后服务</a></li>							
+						</ul>						
+					</div>
+				</div>
+				
+				<!--搜索框-->
+				<div class="search">
+					<form>
+						<input type="text" name="search_contex" id="search_contex" value="魔兽" />
+						<div class="search_btn">搜&nbsp;&nbsp;索</div>
+					</form>			
+				</div>
+				
+				<!--上右侧  购物车那-->
+				<div class="shop_cart">
+					<a class="my_order">我的订单</a>
+					<div class="shopBox">
+						<a href="#" class="shopBox_enter">去购物车结算</a>
+						<div class="mini_shopBox">
+							<ul class="mini_cart"></ul>
+							<div class="mini_cart_massage">
+								<p>
+									<span class="mini_cart_hide"></span>共
+									<span class="mini_cart_sum">0</span>件商品&nbsp;总计
+									<span class="mini_cart_money">￥0</span>
+								</p>
+								<a target="_blank" class="mini_cart_go_cart" href="http://localhost/wangyi/mycart.html#">去购物车结算</a>
+							</div>							
+						</div>						
+					</div>
+					<!--气泡-->
+					<div class="mini_cart_num">0</div>					
+				</div>			
+			</div>
+		</div>
+		
+		
+		<!--顶部导航栏-->
+		<div class="top_nav_wrap">
+			<div class="top_nav">
+				<ul class="nav_ul">
+					<li class="all_goods" style="position: relative;"><a target="_blank" href="http://localhost/wangyi/list.html">&nbsp;&nbsp;&nbsp;&nbsp;全部商品分类</a>
+						<div class="left_class" id="shishi">
+							<dl class="shiyan">
+								<dt>
+									<span class="left_class_main_1"></span>
+									<a href="#">生活用品</a>
+								</dt>
+								<dd class="left_class_menu left_class_menu_1">
+									<ul>
+										<li></li>
+										<li><a href="#">&nbsp;浴巾</a></li>
+										<li><a href="#">抱枕</a></li>
+										<li><a href="#">水杯</a></li>
+										<li><a href="#">书包</a></li>
+										<li><a href="#">收纳盒</a></li>
+										<li><a href="#">明信片</a></li>
+										<li><a href="#">站到</a></li>
+										<li><a href="#">红旗</a></li>
+										<li><a href="#">车贴</a></li>
+									</ul>					
+								</dd>
+							</dl>
+							
+							<dl class="shiyan">
+								<dt>
+									<span class="left_class_main_2"></span>
+									<a href="#">手办玩具</a>
+								</dt>
+								<dd class="left_class_menu left_class_menu_2">
+									<ul>
+										<li></li>
+										<li><a href="#">手机木</a></li>
+										<li><a href="#">工仔</a></li>
+										<li><a href="#">毛绒玩具</a></li>
+										<li><a href="#">书包</a></li>
+										<li><a href="#">车贴</a></li>
+									</ul>					
+								</dd>
+							</dl>
+							<dl class="shiyan">
+								<dt>
+									<span class="left_class_main_3"></span>
+									<a href="#">外设产品</a>
+								</dt>
+								<dd class="left_class_menu left_class_menu_3">
+									<ul>
+										<li></li>
+										<li><a href="#">手机</a></li>
+										<li><a href="#">鼠标</a></li>
+										<li><a href="#">充电宝</a></li>
+										<li><a href="#">耳机</a></li>
+										<li><a href="#">手机壳</a></li>
+										<li><a href="#">耳机</a></li>
+										<li><a href="#">手机壳</a></li>
+									</ul>					
+								</dd>
+							</dl>
+							<dl class="shiyan">
+								<dt>
+									<span class="left_class_main_4"></span>
+									<a href="#">配饰</a>
+								</dt>
+								<dd class="left_class_menu left_class_menu_4">
+									<ul>
+										<li></li>
+										<li><a href="#">相连</a></li>
+										<li><a href="#">戒指</a></li>
+										<li><a href="#">毛绒</a></li>
+										<li><a href="#">书包</a></li>
+										<li><a href="#">车贴</a></li>
+									</ul>					
+								</dd>
+							</dl>
+							<dl class="shiyan">
+								<dt>
+									<span class="left_class_main_5"></span>
+									<a href="#">棋牌</a>
+								</dt>
+								<dd class="left_class_menu left_class_menu_5">
+									<ul>
+										<li></li>
+										<li><a href="#">扑克</a></li>
+										<li><a href="#">麻将</a></li>
+										
+									</ul>					
+								</dd>
+							</dl>
+							<dl class="shiyan">
+								<dt>
+									<span class="left_class_main_6"></span>
+									<a href="#">服饰</a>
+								</dt>
+								<dd class="left_class_menu left_class_menu_6">
+									<ul>
+										<li></li>
+										<li><a href="#">外套</a></li>
+										<li><a href="#">毛衫</a></li>
+									
+									</ul>					
+								</dd>
+							</dl>
+							<dl class="shiyan">
+								<dt>
+									<span class="left_class_main_7"></span>
+									<a href="#">客户端</a>
+								</dt>
+								<dd class="left_class_menu left_class_menu_7">
+									<ul>
+										<li></li>
+										<li><a href="#">将军令</a></li>
+										<li><a href="#">畅玩包</a></li>
+										<li><a href="#">典藏包</a></li>
+										<li><a href="#">游戏光盘</a></li>
+									</ul>					
+								</dd>
+							</dl>					
+						</div>	
+						
+		
+					</li>
+					<li class="shouye"><a href="http://localhost/wangyi/index.html#">首页</a></li>
+					<li class="super_zhi"><a href="#">超值专区</a></li>
+					<li class="tuangou"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;团购专区</a></li>
+					<li class="nav_help"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新手帮助</a></li>
+				</ul>
+			</div>	
+		</div>
+		
+		
+		<!--主要内容区分为左右两部分-->
+		
+		
+		<div class="index_main">
+			<!--左边的主要内容区-->
+			
+			<div class="index_main_left">
+				
+				
+			
+				
+				
+				
+				
+				<!--本月热门排行榜-->
+				<div class="list_monuth_hot">
+					<div class="list_monuth_hot_top">
+						本月热门排行榜		
+					</div>
+					<div class="list_monuth_hot_bottom">
+						<ul class="list_monuth_hot_bottom_ul" id="list_monuth_hot_bottom_ul_1">
+							<!--<li class="monuth_hot_bottom_li">
+								<a href="#" target="_blank"   goods_jia='99' goods_id = '434' goods_img_src = "images/goodsh1.jpeg" goods_name ='第十届暴雪嘉年华纪念品'>
+									<img src="images/goodsh1.jpeg"/>
+									<div>
+										<p>第十届暴雪嘉年华纪念品</p>
+										<span>商城价&nbsp;￥99</span>										
+									</div>
+								</a>								
+							</li>							-->
+						</ul>	
+					</div>	
+				</div>
+				
+				
+				<!--活动专区-->
+				
+				<div class="active_area">
+					<div class="active_area_top">
+						活动专区		
+					</div>
+					<div class="active_area_bottom">
+						<a href="#" class="act1"></a>
+						<a href="#" class="act2"></a>	
+					</div>					
+				</div>
+				
+				<!--活动专区下的图片区-->
+				<div class="picture">
+					<a href="#" class="picture1"></a>
+					<a href="#" class="picture2"></a>
+					<a href="#" class="picture3"></a>
+					<a href="#" class="picture4"></a>	
+				</div>	
+				
+				
+				<!--游戏类型-->
+				<div class="game_type_top">
+					<ul>
+						<li style="height: 40px; line-height: 40px;" >游戏类型</li>
+						<li class="game_type_li" id="game_type_li_1" >							
+								<a href="https://www.baidu.com/" target="_blank"></a>													
+						</li>
+						<li class="game_type_li" id="game_type_li_2">
+							<a href="https://www.baidu.com/"></a>
+						</li>
+						<li class="game_type_li" id="game_type_li_3">
+							<a href="#"></a>
+						</li>
+						<li class="game_type_li" id="game_type_li_4">
+							<a href="#"></a>
+						</li>
+						<li class="game_type_li" id="game_type_li_5">
+							<a href="#"></a>
+						</li>
+						<li class="game_type_li" id="game_type_li_6">
+							<a href="#"></a>
+						</li>
+					</ul>	
+				</div>
+				
+				
+			</div>
+			
+			
+			
+			
+			
+			
+			<!--右边的主要内容区-->
+			<div class="index_main_right">
+				
+				<div class="list_all_class">
+					<div class="list_all_class_top">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;所有商品>&nbsp;商品筛检
+					</div>
+					<div class="list_all_class_bottom">
+						<ul>
+							<li>
+								<strong>品牌:</strong>
+								<span href="#">全部</span>
+								<a href="#">网易</a>
+								<a href="#">DC</a>
+								<a href="#">其他</a>
+								<a href="#">暴雪</a>
+							</li>
+							<li>
+								<strong>游戏:</strong>
+								<span href="#">全部</span>
+								<a href="#">魔兽世界</a>
+								<a href="#">守望先锋</a>
+								<a href="#">其他</a>
+								<a href="#">暴雪英雄</a>
+								<a href="#">炉石传说</a>								
+							</li>
+							<li>
+								<strong>商品类别:</strong>
+								<span href="#">全部</span>
+								<a href="#">生活用品</a>
+								<a href="#">外设产品</a>
+								<a href="#">配饰</a>
+								<a href="#">棋牌</a>
+								<a href="#">服饰</a>								
+							</li>
+							<li>
+								<strong>款式类别:</strong>
+								<span href="#">全部</a>								
+							</li>							
+						</ul>												
+					</div>
+				</div>
+				
+
+				<!--列表-->
+				
+				<div class="list_mid">
+					<div class="list_mid_top">							
+						<span>最新</span>
+						<a href="#">下一页</a>			
+					</div>
+					<div class="list_mid_bottom">
+						<ul class="list_mid_bottom_ul" id="list_mid_bottom_ul_1">
+							<!--<li>
+								<a href="http://localhost/wangyi/details.html" target="_blank"  goods_jia='69' goods_id = '1' goods_img_src = "images/good3.jpeg" goods_name ='预售 守望先锋 卢西奥 硅胶手机壳'  >
+									<img src="images/good3.jpeg" alt="预售 守望先锋 卢西奥 硅胶手机壳"/>
+									<span>预售 守望先锋 卢西奥 硅胶手机壳</span><br />
+									<span >商城价：&nbsp;¥69</span>
+								</a>
+							</li>-->	
+						</ul>	
+					</div>	
+				</div>
+				
+				<!--   具体到哪一页    -->
+				<div class="daohang">
+					<div class="daohang_a">
+						<a href="#" style="background: white; color: red;">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">...</a>
+						<a href="#">8</a>
+						<a href="#" style="width: 40px;">下一页</a>
+					</div>
+					
+				</div>
+
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		<!--网页底部-->
+		
+		<div class="foot_wrap">
+			
+			<!--合作伙伴-->
+			<div class="cooperation">
+				<ul class="cooperation_ul">
+					<li class="cooli"></li>
+					<li><a href="http://www.163.com/" id="cooa1" target="_blank"></a></li>
+					<li><a href="http://www.jinx.com/shop/coll/warcraft/" id="cooa2" target="_blank"></a></li>
+					<li><a href="http://warcraft.megabloks.com/" id="cooa3" target="_blank"></a></li>
+					<li><a href="http://cn.razerzone.com/starcraft2" id="cooa4" target="_blank"></a></li>
+					<li><a href="http://steelseries.com/cn/products/games/world-of-warcraft-cataclysm" id="cooa5" target="_blank"></a></li>
+					<li><a href="http://jmall.jd.com/p151911.html" id="cooa6" target="_blank"></a></li>
+					<li><a href="https://blizzard.tmall.com/" id="cooa7" target="_blank"></a></li>	
+				</ul>	
+			</div>
+			
+			
+			<!--新手指南    和服务区-->
+			<div class="foot_server_wrap">
+				<div class="foot_server">
+					<div class="foot_server_middle">
+						<div>
+							<h3>新手指南</h3>
+							<ul>
+								<li><a href="#">购买流程介绍</a></li>
+								<li><a href="#">网易支付入口</a></li>
+							</ul>
+						</div>
+						<div>
+							<h3>支付方式</h3>
+							<ul>
+								<li><a href="#">支付宝支付</a></li>
+								<li><a href="#">微信支付</a></li>
+								<li><a href="#">网易支付</a></li>
+								<li><a href="#">网银支付</a></li>
+							</ul>
+						</div>
+						<div>
+							<h3>配送方式</h3>
+							<ul>
+								<li><a href="#">韵达配送</a></li>
+								<li><a href="#">顺丰配送</a></li>
+								<li><a href="#">EMS</a></li>
+								<li><a href="#">配送进度</a></li>
+							</ul>
+						</div>
+						<div>
+							<h3>活动信息</h3>
+							<ul>
+								<li><a href="#">特价</a></li>
+								<li><a href="#">免邮</a></li>
+								<li><a href="#">预售</a></li>
+								<li><a href="#">优惠劵</a></li>
+							</ul>
+						</div>
+						<div>
+							<h3>服务与招商</h3>
+							<ul>
+								<li><a href="#">售后服务</a></li>
+								<li><a href="#">帮助中心</a></li>
+								<li><a href="#">联系我们</a></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<!-- 官方正品保证       公司简介-->
+			
+			<div class="guanfang">
+				<ul class="guanfang_top">
+					<li><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><span>官方正品保证</span></li>
+					<li><b id="guanb1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><span>贴心售后服务</span></li>
+					<li id="zhifub"><b id="guanb2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><span>支付：支付宝、微信支付、网易支付等</span> </li>
+					<li><b id="guanb3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><span>标准运费</span></li>
+				</ul>
+				 
+				 <div class="guanfang_bottom">
+				 	<ul class="guanfang_bottom_ul">
+				 		<li><a href=""><img  src="images/bott1.gif"/></a></li>
+				 		<li><a href=""><img  src="images/bott2.gif" id="bott2id"/></a></li>
+				 	</ul>
+				 	
+				 	<div class="guanfang_bottom_div">
+				 		<ul>
+				 			<li><a href="">公司简介</a></li>
+				 			<li><a href="">-相关法律</a></li>
+				 			<li><a href="">-联系我们</a></li>
+				 			<li><a href="">-商务合作</a></li>
+				 			<li><a href="">-加入我们</a></li>
+				 		</ul>
+				 		<p>Copyright &copy;1997-2017 网易公司版权所有</p>
+				 		<p>互联网违法和不良信息举报电话：0571-28090163</p>
+				 	</div>
+				 	
+				 </div>	 
+			</div>
+			
+			
+			<!--底部黑色-->
+			<div class="heise"></div>	
+		</div>
+		
+		
+		<!--右侧固定提示信息-->
+		<div class="right_message">
+			<a href="https://www.baidu.com/" target="right_message_a" target="_blank"></a>	
+		</div>
+		
+		<!--回到顶部-->
+		<div class="goto_top"></div>
+		
+		
+		
+		<!--登录    注册界面-->
+		<div class="login_deng">
+			
+			<!--登录界面-->
+			<div class="login_deng_div">
+				<div class="login_deng_div_top">
+					<div class="login_top_1"></div>
+					<div class="login_chacha">x</div>
+					
+				</div>
+				
+				<form class="login_deng_div_form">
+					<div class="login_deng_div_form_top">
+						<div>
+							<div></div>
+						</div>
+						<input type="text" placeholder="邮箱" id="login_user"/>
+					</div>
+					<div class="login_deng_div_form_middle">
+						<div>
+							<div></div>
+						</div>
+						<input type="password" placeholder="密码" id="login_password"/>
+					</div>
+					<a class="login_bottom_a">登&nbsp;&nbsp;录</a>
+					
+					<div class="longin_two">
+						<a href="" class="longin_two_left">忘记密码？</a>
+						<a href="#" class="longin_two_right">去注册</a>
+					</div>
+				</form>	
+			</div>
+			
+			
+			<!--   注册  界面   -->
+			<div class="register_div">
+				<div class="register_div_top">
+					<div class="login_top_1"></div>
+					<div class="login_chacha">x</div>
+					
+				</div>
+				
+				<form class="register_div_form">										
+						<input type="text" placeholder="网易邮箱/手机号/其他邮箱" id="register_email"/>									
+						<input type="password" placeholder="密码"  id="register_password"/>					
+						<!--验证码-->
+						<div class="register_code">
+							<input type="text" id="register_code_input"/>
+							<span id="register_code_span">niha</span>	
+						</div>						
+					<a class="register_bottom_a">注&nbsp;&nbsp;册</a>
+					<div class="register_agree">
+						我同意《服务条款》和《网络游戏用户隐私保护和个人信息利用政策》
+					</div>
+					<a class="register_login_a" href="#">去登录>></a>
+				</form>	
+			</div>
+			
+			
+			
+		</div>	
+	</body>
+	
+</html>
